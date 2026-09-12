@@ -1,7 +1,7 @@
 # Wrappedboxd
 A single page application that generates image template of monthly film watches from [Letterboxd](https://letterboxd.com/). Uses [The Movie Database](https://www.themoviedb.org/)'s API to fetch film posters.
 
-![Screenshot](Wrappedboxd_July_2025.png)
+![Screenshot](Wrappedboxd.png)
 
 ### How to Use
 - Visit your account settings on Letterboxd.
