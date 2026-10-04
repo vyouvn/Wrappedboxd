@@ -1,0 +1,88 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: all;
+}
+
+@plugin "daisyui/theme" {
+  name: "letterboxd";
+  prefersdark: false;
+  color-scheme: dark;
+  default: true;
+  
+  --color-base-100: #14181c;
+  --color-base-200: #1b2127;
+  --color-base-300: #20262e;
+  --color-base-content: #99aabb;
+  --color-primary: #00e054;
+  --color-secondary: oklch(0.7319 0.1858 52.98);
+}
+
+:root[data-theme="letterboxd"],
+:root:has([data-theme="letterboxd"]),
+:root:has(input.theme-controller[value="letterboxd"]:checked) {
+  background-image: linear-gradient(
+    to bottom,
+    #20262e 0px,
+    #1b2127 150px,
+    #14181c 330px
+  );
+  background-repeat: no-repeat;
+  background-color: var(--color-base-100);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Tienne:wght@400;700;900&display=swap');
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif, Tienne;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  display: flex;
+  place-items: center;
+}
+
+@font-face {
+  font-family: 'Bartex Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bartex Regular'), url('Bartex.woff') format('woff');
+}
+
+h1 {
+  font-family: 'Tienne';
+}
+
+h2 {
+  font-family: 'Tienne';
+}
+
+.card {
+  padding: 2em;
+}
+
+#app {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.material-icons {
+  font-size: inherit;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+
